@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Codex Eunice : Story</title>
+    <meta name="description" content="A simple moderation Discord bot.">
+    <meta name="theme-color" content="#31a5ff">
+    <link rel="icon" type="image/png" sizes="300x250" href="./assets/img/pfp.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background-color: var(--background);">
+    <div id="top" style="height: 12px;">
+        <nav class="navbar navbar-light navbar-expand fixed-top" style="color: var(--main-color);border-top-width: 6px;border-top-style: solid;background: var(--background);">
+            <div class="container-fluid"><a class="navbar-brand" href="./index.html" style="color: var(--main-color);font-family: 'Alfa Slab One', cursive;">Codex Eunice</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link active smoothScroll" href="./index.html#feature" style="color: var(--text-color);">Features</a></li>
+                        <li class="nav-item"><a class="nav-link smoothScroll" href="./index.html#commands" style="color: var(--text-color);">Commands</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://discord.com/oauth2/authorize?client_id=994631247668187166&permissions=8&scope=applications.commands%20bot" target="_blank" style="color: var(--text-color);">Invite</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" style="color: var(--text-color);">Story</a></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    </div>
+    <header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center" style="height: 418px;text-align: center;margin: 55px;"><img class="rounded" src="./assets/img/pfp.png" width="150" height="150" style="margin-top: 30px;">
+        <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">Story</h1>
+    </header>
+    <div id="feature" style="height: 90px;background: var(--secondary);"><div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--background)" fill-opacity="1" d="M0,96L40,112C80,128,160,160,240,144C320,128,400,64,480,48C560,32,640,64,720,69.3C800,75,880,53,960,58.7C1040,64,1120,96,1200,96C1280,96,1360,64,1400,48L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg></div></div>
+    <div class="features-boxed" style="background: var(--secondary);">
+        <div class="container" style="color: var(--main-color);">
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div id="features" class="box" style="/*border-radius: 34px;*/"><i class="fa fa-bookmark icon" style="color: var(--main-color);"></i>
+                        <p class="description" style="color: var(--secondary-text-color); text-align: left;">So this story starts like any other, <b>an idea!</b> What idea? you might ask, or possibly you want to know what caused this idea. Well good news, I'll tell you.<br><br>
+So what exactly <i>was</i> the idea? The original idea was to build a Discord bot that could protect The Independent Baptist Community Discord server from any fowl language that may be used. Seems simple enough... <i>Right?</i><br><br>
+Well let's take a step back, what exactly caused me to have such an ambitious idea? It all started when I was creating my DS Creator Discord bot...<br><br>
+I was just starting out. Doing the basics, you know, reading documentation and such. And I had the idea. <i>What if I used this bot (DS Creator bot) to make sure people follow the "No Cursing!" rule in my server?</i><br><br>
+So I jumped into Google Chrome and searched up how I could do something like this. Within 5 minutes I found an answer on Stack Overflow!<br><br>
+So me, being the smart person I am, added the code to my bot and tweaked it to fit my needs. After that, I kinda forgot about it. Until one day, when a few people joined my server, they had some pretty terrible language and thus my bot deleted their messages. <i>Nice!</i> or, so I thought...<br><br>
+Because there was something in the code, something so terrible it messed up the entire filter code. I had been searching for these words <b>inside</b> any messages that were sent but wasn't actually checking if it found any bad word itself.<br><br>
+Here is an example of what was happening (without bad words),<br><br>
+BadWord = "ju";<br>
+Message = "jump";<br><br>
+It would see that the word "jump" has the bad word "ju" in it, thus triggering the bot to delete the message, even though jump isn't a bad word.<br><br>
+This just couldn't do. So I decided to create a better filter.I split the message up anytime there was a space, comma, colon, tab, etc. Then I made a for loop that would grab the first word of the split up message, if it matches a bad word, then delete the message, else, just check the next word. It does this for every word until it either finds a bad word, or it reaches the end of the message. Much better! <i>Right?</i><br><br>
+Now before I tell you what went wrong, I need to say that this is the part where I remove the word filter from the DS Creator bot and put it in a new bot, No Cursing (Codex Eunice's original name).<br><br>
+But why did I move to No Cursing? Well, after this incident, I told it in the mod channel of The Independent Baptist Community Discord server. And they asked if I could add it to the server. And I said sure, even though it was inside my DS Creator bot. But I didn't want them to feel like I was advertising.<br><br>
+So, I created a new bot and named it "No Cursing" which the name should be pretty self-explanatory of what the bot does. And then I added the word filter to No Cursing.<br><br>
+So back to the part where the word filter works... <i>Right?</i><br><br>
+Well... no. While yes it would check individual words, it couldn't check phrases. What do I mean by phrases? Here is what I mean,<br><br>
+"Jumping is fun!"<br><br>
+This would be a phrase because it has spaces in it. My current message filter didn't work with these. So I needed to come up with a solution. And a solution I found.<br><br>
+Basically if the word filter didn't find any bad words, it would then go to the phrase filter. This used the old method of finding words but this time I didn't have to worry. Why? Well, because phrases have spaces while words don't. Meaning that a phrase isn't going to be inside a word like a bad word had the possiblity to be.<br><br>
+Here's an example of what I mean (without bad phrases),<br><br>
+BadPhrase = "Jumping is fun";<br>
+Message = "Jumping is fun!";<br><br>
+It would find a bad phrase in this (and no, I did not make a typo when putting a "!" at the end of the Message but not at the end of the BadPhrase).<br>
+<b>NICE!</b><br><br>
+This time nothing goes wrong, I promise.<br><br>
+So for the next few days, possibly a few weeks, I just continued to add new words to the bad words list and new phrases to the bad phrases list.<br><br>
+But then I received a DM from a user in the DS Game Maker server who goes by the name DDesignDude. His DM said, "This is a random suggestion, but maybe the 'no cursing' bot in the dsgm sever could be changed to something like 'no sensitive content' bot and just remind people to view the rules channels rather than stating 'bad word!'.<br><br>
+Just might make some people feel they are being talked down to versus reminding them this is sort of like a Nintendo family friendly server and certain words/content cannot be posted."<br>
+And I took heed... <i>sorta...</i><br><br>
+Now I wasn't going to have the bot not delete messages but the idea of having an actual message with a reason why we don't want bad words was too good to not add. But then it hit me, like a train moving at 250mph, <i>Not every server is going to need/want the same message.</i> And I dreaded adding that functionality.<br><br>
+But I persevered, I added not only a custom message per server but also a strictness to each server. What is the strictness? The strictness is just how strict on words you want your server to be. "s" would be super strict and "m" would be medium strict. No Cursing was really starting to take shape.<br><br>
+But then something happened, the bot wasn't able to delete one of my testing messages. So I figured out how to send a new message when a message can't be deleted. This new message pings the admins and moderators of the server so they can deal with this. So of course I needed to add the admin role ID and the mod role ID for each server. Which wasn't too hard to get...Until I was testing my bot and realized it was in more servers than I had added it too.<br><br>
+So I hacked up a simple command that only I can use that sends a message with the name of every server the bot is in. And I figured out the name of the server, Christian Grassroots, and who owns the server, Mary Ann.<br><br>
+But, after that, I just flexed that my bot was in more servers than I added it too. I did not really do anything. Until I got the idea of adding these "ban", "kick", "timeout", and "warn" commands.<br><br>
+At first I tried a normal command but they were way to easy to brake the bot with so I scraped them, and instead went with slash commands. And this is where I almost went insane.<br><br>
+To load in slash commands, you need the ID of the guild (server) that you want to load the slash commands into. And to do so, you need the ID of the server. Which for four of the five servers my bot was in, this wasn't a problem... but for the Christian Grassroots server, it was a different story...<br><br>
+Using some code, I grabbed the Christian Grassroots' server ID and added it. At this point I contacted Mary Ann and got the admin and mod role IDs. I also set the server to super strict mode based off the server's name (hope I didn't choose wrong).<br><br>
+I was lucky to get in contact with the server owner, but I might not be so lucky next time. So I created a way to grab the server ID when the bot joins a server meaning I don't ever have to hack some code together to get an ID again.<br><br>
+And at this point, I decided it was best to create the "change_message" and "set_roles" commands. "change_message" would change the filter message and "set_roles" will set the mod and admin role IDs.<br><br>
+But I needed to also add a "set_strictness" command to allow the server strictness to be set to "s" or "m". But instead of adding this command, I removed both the "change_message" and the "set_roles" commands and added the "setup_bot" command instead.<br><br>
+This command allows you to simply use one command to, well, setup the bot! But I still felt as if my moderation commands needed another one. <i>How about... "clear"?</i> And so I added a "clear" command. It asks for a channel and a number. If you add a number, it will delete that many messages, but if you leave it blank, it will delete all the messages in a channel.<br><br>
+Next I asked the DS Game Maker server and The Independent Baptist Community server what I should change No Cursing's name too. They didn't help since I came up with Codex Eunice before anyone replied to my message. But it's all good.<br><br>
+From there I just fixed a bug here and there, and I started making this website. But now that I've finished most of the website, here I am, writing the story of Codex Eunice for you to read! I hope I've inspired you to make your own Discord bot, or at least entertained you while you read this.<br><br>
+(All names mentioned, are used with permission.)<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <div style="background-color: var(--background);"><div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-41.53,-9.56 C167.83,173.98 302.14,-60.89 534.09,89.10 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: var(--secondary);"></path></svg></div></div>
+    </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--secondary)" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,154.7C384,171,480,213,576,218.7C672,224,768,192,864,181.3C960,171,1056,181,1152,192C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <div class="footer-dark" style="background: var(--secondary);padding-top: 0px;padding-bottom: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col item social"><a class="smoothScroll" href="#top"><i class="icon ion-android-arrow-up"></i></a></div>
+            </div>
+            <p class="copyright" style="color: var(--text-color);">Codex Eunice © 2022 BowersIndustry (Bro. Kenyon#1492)</p>
+            <p class="copyright" style="color: var(--text-color);padding: 0px;">
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Counting.js"></script>
+    <script src="assets/js/untitled.js"></script>
+</body>
+
+</html>
