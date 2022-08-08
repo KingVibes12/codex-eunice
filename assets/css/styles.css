@@ -275,7 +275,7 @@ div#features:hover {
 .partner {
   width: 160px;
   height: 160px;
-  transition: all 200ms linear;
+  transition: all 50ms linear;
 }
 
 .yeet {
