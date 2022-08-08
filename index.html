@@ -34,7 +34,7 @@
     <header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center" style="height: 418px;text-align: center;margin: 55px;"><img class="rounded" src="./assets/img/pfp.png" width="150" height="150" style="margin-top: 30px;">
         <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">Codex Eunice</h1>
         <p style="color: var(--secondary-text-color);">A simple moderation Discord bot.</p>
-        <div class="tada animated"><div role="group" class="btn-group">    <a href="https://discord.com/oauth2/authorize?client_id=994631247668187166&permissions=8&scope=applications.commands%20bot" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;">Invite Me</a>
+        <div class="tada animated"><div role="group" class="btn-group">    <a href="https://discord.com/oauth2/authorize?client_id=994631247668187166&permissions=8&scope=applications.commands%20bot" target="_blank" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;">Invite Me</a>
 	
 	<a class="btn btn-primary smoothScroll shadow-none" role="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;"
         href="#feature">Features</a></div></div>
@@ -49,19 +49,25 @@
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div id="features" class="box" style="/*border-radius: 34px;*/"><i class="fa fa-bolt icon" style="color: var(--main-color);"></i>
                         <h3 class="name">Fast</h3>
-                        <p class="description" style="color: var(--secondary-text-color);">Explain how fast your bot is here! Lightning fast!<br></p>
+                        <p class="description" style="color: var(--secondary-text-color);">Codex Eunice is a super fast bot! But just because it's fast doesn't mean there is less quality!<br></p>
+                    </div>
+                </div>
+				<div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div id="features" class="box" style="/*border-radius: 34px;*/"><i class="fa fa-flag icon" style="color: var(--main-color);"></i>
+                        <h3 class="name">Word Filter</h3>
+                        <p class="description" style="color: var(--secondary-text-color);">Codex Eunice has a word filter. This is great for Bible servers or clean servers in general.<br></p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div id="features" class="box"><i class="fa fa-lock icon" style="color: var(--main-color);"></i>
                         <h3 class="name">Secure</h3>
-                        <p class="description" style="color: var(--secondary-text-color);">Explain how secure your bot is and why people should use it.<br></p>
+                        <p class="description" style="color: var(--secondary-text-color);">All information that Codex Eunice collects is never and I repeat <b>NEVER</b> released or sold to anyone.<br></p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div id="features" class="box"><i class="fa fa-smile-o icon" style="color: var(--main-color);"></i>
                         <h3 class="name">Happy Users</h3>
-                        <p class="description" style="color: var(--secondary-text-color);">Explain how happy everyone who uses your bot is!<br></p>
+                        <p class="description" style="color: var(--secondary-text-color);">Codex Eunice supports family-friendly content in a supportive, encouraging, and positive environment.<br></p>
                     </div>
                 </div>
             </div>
@@ -74,11 +80,11 @@
             <div class="container-fluid text-white">
                 <div class="row row-cols-3 justify-content-center" style="color: var(--secondary-text-color);">
                     <div class="col-auto col-md-6 col-lg-4 text-center pb-5 pt-5 number-item love_counter">
-                        <h1 class="love_count" style="font-size: 70px;">5+</h1>
+                        <h1 class="love_count servers" id="servers" style="font-size: 70px;">0+</h1>
                         <h4 style="color: var(--main-color);margin-top: -6px;">Total Servers</h4>
                     </div>
                     <div class="col-auto col-lg-4 text-center align-self-center pb-5 pt-5 love_counter">
-                        <h1 class="love_count" style="font-size: 70px;">253+</h1>
+                        <h1 class="love_count users" id="users" style="font-size: 70px;">0+</h1>
                         <h4 style="color: var(--main-color);margin-top: -6px;">Total Users</h4>
                     </div>
                 </div>
@@ -90,7 +96,7 @@
           <div class="accordion-item">
       <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Slash Commands</span><span class="icon" aria-hidden="true"></span></button>
       <div class="accordion-content">
-        <p>/setup_bot - starts the setting up process <br> /warn - warns any member you want <br> /timeout - times out any member you want <br> /kick - kicks any member you want <br> /ban - bans any member you want <br> /clear - allows you to delete either a set number of messages or all messages from a channel</p>
+        <p>/setup_bot - starts the setting up process<br> /warn - warns any member you want<br> /timeout - times out any member you want<br> /kick - kicks any member you want<br> /ban - bans any member you want<br> /clear - allows you to delete either a set number of messages or all messages from a channel</p>
       </div>
     </div>
           <div class="accordion-item">
@@ -105,7 +111,7 @@
 </div></div>
     <div class="team-clean" style="background: rgba(0,0,0,0);">
         <div class="container" style="filter: blur(0px);padding-bottom: 0px;">
-            <h3 class="text-center name" style="color: var(--secondary-text-color)">Top Servers Using Our Bot!</h3>
+            <h3 class="text-center name" style="color: var(--secondary-text-color)">Top Servers Using Codex Eunice!</h3>
             <div class="intro"></div>
             <div class="row row-cols-4 d-flex d-xl-flex justify-content-center justify-content-xl-center people" style="padding-bottom: 0px;">
                 <div class="col-auto col-md-6 col-lg-4 yeet"><a href="https://discord.com/invite/c7Nhqy2XVD" target="_blank"><img class="rounded-circle partner" src="https://cdn.discordapp.com/icons/767104602675216444/2eb5c477b6b66474c97b52115e7670b8.webp?size=1280"></a><p>The Independent Baptist Community</p></div>

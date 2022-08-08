@@ -1,4 +1,14 @@
+const users = 253;
+const servers = 5;
+
 jQuery(window).scroll(startCounter);
+
+var observer = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true)
+		startCounter();
+}, { threshold: [1] });
+
+observer.observe(document.getElementById("servers"));
 function startCounter() {
     var hT = jQuery('.love_counter').offset().top,
         hH = jQuery('.love_counter').outerHeight(),
@@ -10,13 +20,24 @@ function startCounter() {
 			if(this.textContent.includes("+")){
 				this.textContent = this.textContent.replace("+","");
 			}
-            jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-                duration: 2000,
-                easing: 'swing',
-                step: function () {
-                    $this.text(Math.ceil(this.Counter) + '+');
-                }
-            });
+			if(this.classList.contains("servers")){
+				jQuery({ Counter: 0 }).animate({ Counter: servers }, {
+					duration: 2000,
+					easing: 'swing',
+					step: function () {
+						$this.text(Math.ceil(this.Counter) + '+');
+					}
+				});
+			}
+			else if(this.classList.contains("users")){
+				jQuery({ Counter: 0 }).animate({ Counter: users }, {
+					duration: 2000,
+					easing: 'swing',
+					step: function () {
+						$this.text(Math.ceil(this.Counter) + '+');
+					}
+				});
+			}
         });
     }
 }
