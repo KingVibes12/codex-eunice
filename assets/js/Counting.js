@@ -1,5 +1,5 @@
-const users = 253;
-const servers = 5;
+const users = 309;
+const servers = 6;
 
 jQuery(window).scroll(startCounter);
 
